@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/css/base.scss"],"names":[],"mappings":"AAAA;EACC;EACA;EACA;EACA;EACA;EACA","file":"base.8103338d.css","sourceRoot":"../public","sourcesContent":["body.template {\n\tbackground-color: #000;\n\ttext-align: center;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\theight: 100vh;\n}"]}
