@@ -1,39 +1,42 @@
 {
-  "name": "polish-parcel-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run clean && parcel src/*.html --out-dir development -p 3000",
-    "build": "rimraf ./dist && parcel build src/*.html --out-dir dist --public-url ./",
-    "clean": "rimraf ./development && rimraf ./.cache"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
-    "parcel-bundler": "^1.12.5",
-    "parcel-plugin-custom-dist-structure": "^1.1.17",
-    "rimraf": "^3.0.2",
-    "sass": "^1.32.8"
-  },
-  "browserslist": "> 0.2%, last 2 versions, not dead",
-  "customDistStructure": {
-    "config": {
-      ".js": "js",
-      ".css": "css",
-      "images": [
-        ".jpg",
-        ".png",
-        ".svg",
-        ".gif"
-      ]
+    "name": "polish-parcel-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npm run clean && parcel src/*.html --out-dir development -p 3000",
+        "build": "rimraf ./dist && parcel build src/*.html --out-dir dist --public-url ./",
+        "clean": "rimraf ./development && rimraf ./.cache",
+        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
     },
-    "options": {
-      "development": true
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.13.14",
+        "@babel/preset-env": "^7.13.12",
+        "onchange": "7.1.0",
+        "parcel-bundler": "^1.12.5",
+        "parcel-plugin-custom-dist-structure": "^1.1.17",
+        "prettier": "2.2.1",
+        "rimraf": "^3.0.2",
+        "sass": "^1.32.8"
+    },
+    "browserslist": "> 0.2%, last 2 versions, not dead",
+    "customDistStructure": {
+        "config": {
+            ".js": "js",
+            ".css": "css",
+            "images": [
+                ".jpg",
+                ".png",
+                ".svg",
+                ".gif"
+            ]
+        },
+        "options": {
+            "development": true
+        }
     }
-  }
 }
