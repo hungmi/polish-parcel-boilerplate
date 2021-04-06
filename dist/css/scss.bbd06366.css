@@ -1,2 +1,9 @@
-body.template{background-color:#000;text-align:center;display:flex;align-items:center;justify-content:center;height:100vh}
+body.template {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 /*# sourceMappingURL=../scss.bbd06366.css.map */
