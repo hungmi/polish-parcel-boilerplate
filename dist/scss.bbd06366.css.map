@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/scss/_base.scss"],"names":[],"mappings":"AAAA,cACC,qBAAA,CACA,iBAAA,CACA,YAAA,CACA,kBAAA,CACA,sBAAA,CACA","file":"scss.bbd06366.css","sourceRoot":"../src","sourcesContent":["body.template {\n\tbackground-color: #000;\n\ttext-align: center;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\theight: 100vh;\n}"]}
