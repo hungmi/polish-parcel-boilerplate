@@ -6,9 +6,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "npm run clean && parcel src/*.html --out-dir development -p 3000 --log-level 4 --open",
-        "build": "rimraf ./dist && parcel build src/*.html --out-dir dist --public-url ./ --log-level 4",
+        "build": "rimraf ./dist && parcel build src/*.html --out-dir dist --public-url ./ --log-level 4 && cp src/robots.txt dist/robots.txt",
         "clean": "rimraf ./development && rimraf ./.cache",
-        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+        "deploy": "npm run build && node gh-pages-deploy.js"
     },
     "keywords": [],
     "author": "",
@@ -17,6 +18,7 @@
         "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.13.12",
         "autoprefixer": "^9.8.6",
+        "gh-pages": "^3.1.0",
         "onchange": "7.1.0",
         "parcel-bundler": "^1.12.5",
         "parcel-plugin-custom-dist-structure": "^1.1.17",
